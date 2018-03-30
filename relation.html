@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>联系我们</title>
+<link rel="stylesheet" type="text/css" href="css/relation.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+</head>
+ 
+<body>
+     <div class="header">
+         <div class="header-top">
+         <div class="top-margin">
+             <div class="top-left">
+                <p><b>安心家居</b></p>
+             </div>
+             <div class="top-right">
+                <ul>
+                   <li><a href="index.html">首页</a></li>
+                   <li><a href="about.html">关于我们</a></li>
+                   <li><a href="appreciate.html">案例欣赏</a></li>
+                   <li><a href="Product display.html">产品展示</a></li>
+                   <li><a href="news.html">新闻资讯</a></li>
+                   <li class="li1"><a href="relation.html" id="a">联系我们</a></li>
+             </ul>
+             </div>
+         </div>
+         </div>
+     </div>
+
+     <div class="bj">
+         <p class="bj-p"><img src="img/f1.jpg"></p>
+        </div>
+      <div class="relation">
+     <div class="relation-margin">
+         <div class="relation-top">
+             <p>联系我们</p>
+         </div>
+         <div class="relation-botton">
+			<ul>
+				<li class="li1">
+					<a href="" class="a1">
+						<img src="img/f3.png"/></a>
+						<div class ="gress">
+							<p class="p1"><span>客服热线</span></p>
+							<p class="p2">400-00000000</p>	 
+						</div>			
+				</li>
+				<li>
+					<a href="" class="a1">
+						<img src="img/f2.png"/></a>
+						<div class ="gress">
+							<p class="p1"><span>传真</span></p>
+							<p class="p2">020-00000000</p> 
+						</div>
+				</li>
+				<li>
+					<a href="" class="a1">
+						<img src="img/f4.png"/></a>
+						<div class ="gress">
+							<p class="p1"><span>邮箱</span></p>
+							<p class="p2">contact@fkadjkhsf.co</p> 
+						</div>
+				</li>
+				<li>
+					<a href="" class="a1">
+						<img src="img/f5.png"/></a>
+						<div class ="gress">
+							<p class="p1"><span>地址</span></p>
+							<p class="p2">昆山市智谷创意产业园</p>
+						</div>
+				</li>
+			</ul>
+		</div>
+     </div>
+      </div>
+    
+          <div class="lianxi">
+         <div class="lianxi-margin">
+             <div class="lianxi-left">
+                 <h3>联系我们</h2>
+                 <ul>
+                    <li>地址：昆山市智谷创意产业园</li>
+                    <li>电话：4001-000-000</li>
+                    <li>邮箱：contact@kindjob.com</li>
+                    <li>传真：100-0000-000</li>
+                 </ul>
+             </div>
+             <div class="lianxi-right">
+                 <p>
+                    <input type="text" name='username' class='text' placeholder="姓名*">
+                    <span class='tishi'>姓名长度至少2位</span>
+                 </p>       
+                 <p>
+                    <input type="text" class="text" placeholder="邮箱*" name='email'>
+                    <span class='tishi'>请输入正确的邮箱格式</span>
+                 </p>
+                 <p>
+                    <input type="text" class="text" name='phone' placeholder="电话*" maxlength='11'>
+                    <span class='tishi'>请正确输入您的手机号码</span>
+                 </p>
+                 <p><input type="text" name='username' placeholder="内容/选填" class="inp"></p>
+                 <p><input type="submit" value="提交留言"  class="btn"></p>
+             </div>
+         </div>
+     </div>
+    
+     <div class="footer">
+         <div class="footer-margin">
+             <div class="footer-wen">
+                 <ul>
+                   <li class="li1"><a href="index.html" id="b">首页</a></li>
+                   <li><a href="about.html" id="b">关于我们</a></li>
+                   <li><a href="appreciate.html" id="b">案例欣赏</a></li>
+                   <li><a href="Product display.html" id="b">产品展示</a></li>
+                   <li><a href="news.html" id="b">新闻资讯</a></li>
+                   <li><a href="relation.html" id="b">联系我们</a></li>
+                 </ul>
+                 <p>Copyright © 2017.家居装饰有限责任公司 | 家居家纺公司</p>
+             </div>
+         </div>
+     </div>
+</body>
+    <script>
+    	    $('input[name=username]').blur(function() {
+        val = this.value;
+
+        if (val.length < 2) {
+            $(this).data({
+                's': 0
+            });
+            $(this).next().show();
+        } else {
+            $(this).data({
+                's': 1
+            });
+            $(this).next().hide(); 
+        }
+    });
+  
+
+    $('input[name=email]').blur(function() {
+        val = this.value;
+
+        if (!val.match(/^\w+@\w+\.\w+$/i)) {
+            $(this).data({
+                's': 0
+            });
+            $(this).next().show();
+        } else {
+            $(this).data({
+                's': 1
+            });
+            $(this).next().hide();
+        }
+    });
+    $('input[name=phone]').blur(function() {
+        val = this.value;
+
+        if (!val.match(/^139\d{8}$/)) {
+            $(this).data({
+                's': 0
+            });
+            $(this).next().show();
+        } else {
+            $(this).data({
+                's': 1
+            });
+            $(this).next().hide();
+        }
+    });
+    $('form').submit(function() {
+
+        $('.text').blur(); 
+       
+
+        tot = 0;
+        $('.text').each(function() {
+            tot += $(this).data('s');
+        });
+        if (tot != 3) {
+            return false; 
+            
+        }
+    });
+    </script>
+</html>

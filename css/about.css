@@ -1,0 +1,401 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    font-family:"微软雅黑"；
+}
+ul {
+	list-style: none;
+}
+li{
+    float: left;
+}
+body {
+	height: 100%;
+    width: 100%;
+    min-width: 1160px;
+}
+input{
+    outline: none;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+#b{
+    cursor: pointer;
+	transition:all 1s ease;
+}
+b:link{
+    color: #fff;
+}
+b:visited{
+    color: #fff;
+
+}
+a:link{
+    color: #fff;
+}
+a:visited{
+    color: #fff;
+
+}
+#b:hover{
+    color: #ffae00;
+}
+#a:visited{
+    color: #ffae00;
+}
+a img {
+	border: none;
+}
+a > img {
+	vertical-align: middle;
+    
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background: #c8305f;
+}
+.header-top{
+    width: 100%;
+    height: 85px;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+    min-width: 1160px;
+    position: absolute;
+    top: 7px;
+}
+.top-margin{
+    width: 1160px;
+    height: 90px;
+    margin: auto;
+    color: #fff
+}
+.top-left{
+    width: 20%;
+    height: 90px;
+    float: left;
+}
+.top-left p{
+    line-height: 90px;
+    width: 150px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.top-right{
+    width: 56%;
+    float: left;
+    margin-left: 24%;
+    
+}
+.top-right li{
+    float: left;
+    line-height: 90px;
+    margin-left: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+.top-right .li1{
+    color: #ffae00;
+}
+
+.bj{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.bj img{
+    width: 100%;
+    height: 500px;
+}
+.tixi{
+    width: 100%;
+    height: 860px;
+}
+.tixi-top{
+    width: 1160px;
+    margin: auto;
+    height: 260px;
+    text-align: center;}
+.tixi .p-img{
+    width: 100px;
+    height: 100px;
+    margin-left: 125px;
+    border-radius: 50%;
+    background: #c8305f
+}
+.tixi .p-img:hover{
+    background: #ffae00
+}
+.tixi .p-img2:hover{
+    background: #c8305f
+}
+.tixi .p-img2{
+    width: 100px;
+    height: 100px;
+    margin-left: 125px;
+    border-radius: 50%;
+    background: #ffae00
+}
+.p-img2 img{
+    margin-top: 25px;
+    margin-left: 3px;
+}
+.tixi-top li{
+    width:31%;
+}
+.tixi-top .li2{
+    margin-left: 40.5px;
+} 
+.tixi p{
+    margin-top: 15px;
+}
+.p-img img{
+    margin-top: 25px;
+    margin-left: 3px;
+}
+.tixi .p-big{
+    font-size: 20px;
+    color: rgb(98, 98, 105)
+}
+.tixi .p-small{
+    color: #ccc;
+}
+.tixi-botton{
+    width: 100%;
+    height: 600px;
+    background: #f9fafc;
+    border-top: 1px solid #CDC3C3;
+    border-bottom: 1px solid #CDC3C3;
+}
+.tixi-margin{
+    width: 1160px;
+    height: 600px;
+    margin: auto;
+}
+.tixi-left{
+    width: 540px;
+    height: 550px;
+    float: left;
+    color:  #bebdbd;
+    margin-top: 50px;
+}
+.tixi-left .p-big{
+    font-size: 32px;
+}
+.tixi-left p{
+    margin-top: 10px;
+}
+.tixi-left ul{
+    list-style: circle;
+    margin-left: 20px;
+    
+}
+.tixi-left li:hover{
+    margin-left: 20px;
+    transition: all 1s ease;
+    color: #ffae00
+}
+.inp input{
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    margin-top: 20px;
+    clear: left;
+    text-align: center;
+    background: #ffae00;
+    margin-left: 35%;
+    outline: none;
+    border: none;
+}
+.inp input:hover{
+    background: #c8305f;
+    transition: all 0.1s 0.4s;
+    cursor: pointer;
+}
+
+.tixi-right{
+    width: 50%;
+    margin-left: 40px;
+    height:535px;
+    float: left;
+    margin-top: 65px;
+
+}
+.tixi-section{
+        width: 100%;
+        height: 350px;
+        float: left;
+}
+.tixi-section div{
+        float: left;
+        width: 100%;
+        height: 100%;
+        display: none;
+}
+.tixi-section .show{
+        display: block;
+}
+.tixi-aside{
+        width: 100%;
+        height:200px;
+        float: left;
+        text-align: center
+}
+.tixi-section div img{
+        width: 100%;
+        height: 100%;
+}
+.tixi-aside .first{
+    margin-left: 0px;
+}
+.tixi-right li{
+        list-style: none;
+        float: left;
+        line-height: 60px;
+        width: 23.765%;
+        height:120px;
+        margin-top: 1%;
+        margin-left: 1.65%;
+        cursor: pointer;
+    }
+.tixi-aside img{
+    width: 100%;
+    height: 100%;
+}
+
+.kid{
+    width: 100%;
+    height: 220px;
+    background: #c8305f;
+    text-align: center;
+}
+.kid-top{
+    width: 100%;
+    height: 200px;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+    min-width: 1160px;
+    position: absolute;
+    margin-top: 10px;
+}
+.kid-p{
+    width: 1160px;
+    height: 160px;
+    margin: auto;
+    margin-top: 45px;
+}
+.kid-p-left{
+    width: 25%;
+    font-size: 36px;
+    color: #fff;
+    float: left;
+}
+.kid-p-left span{
+    width: 100px;
+    font-size: 18px;
+}
+.kid-p-left p{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+hr{ 
+    border: none;
+    border: 1px solid #fff;
+    width: 70px;
+    margin: auto;
+    margin-bottom: -10px;
+}
+.anli{
+    width: 1160px;
+    height: 540px;
+    margin: auto;
+    margin-top: 100px;
+    
+    text-align: center;
+}
+.anli-top{
+    width: 100%;
+    height: 110px;
+    
+}
+.anli-top p{
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #616161;
+}
+.anli-top .sp1{
+    font-size: 14px;
+    color: #bebdbd
+}
+.anli-botton{
+    width: 100%;
+    height: 510px;
+   
+}
+.anli-botton li{
+    width: 22%;
+    height: 100%;
+    
+}
+
+.anli-botton .li-img{
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.anli-botton .li-img img:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s ease;
+}
+.anli-botton img{
+    width: 100%;
+    height: 100%;
+}
+.anli-botton p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #c8305f;
+    cursor: pointer;
+}
+.anli-botton .li2{
+    margin-left: 3%;
+}
+.footer{
+    width: 100%;
+    height: 120px;
+    background: #c8305f;
+    color: #fff;
+    padding-top: 35px;
+    text-align: center;
+}
+.footer-margin{
+    width: 1100px;
+    height: 100px;
+    margin: auto;
+    border-top: 1px solid #fff;
+}
+
+.footer-wen ul{
+    width:59%;
+    height: 50px;
+    line-height: 60px;
+    margin: auto;
+    font-size: 18px;
+}
+.footer-wen .li1{
+    margin-left: 0px;
+}
+.footer-wen li{
+    margin-left: 50px;
+}
+.footer p{
+    margin-top: 10px;
+    font-size: 14px;
+}
